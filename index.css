@@ -1,8 +1,12 @@
 
+/* Font */
 
-
+@font-face { font-family: Ubuntu; src: url('/Ubuntu/Ubuntu-Light.ttf'); } 
+ @font-face { font-family: Ubuntu; font-weight: normal; src: url('/Ubuntu/Ubuntu-Light.ttf');}
+  
 
 /* Style navigation menu links */
+
 .topnav a {
     color: rgb(7, 93, 7);
     padding: 14px 16px;
@@ -26,5 +30,6 @@
     max-width: 960px;
     margin: auto;
   }
+  
   
   
