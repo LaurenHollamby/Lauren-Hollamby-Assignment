@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--- Centre & Title Font -->
+
+    <style>
+        .content {
+          max-width: 960px;
+          margin: auto;
+        }
+        </style>
+    
+        <style>
+    @font-face {
+        font-family: Ubuntu;
+        src: url(/Ubuntu/Ubuntu-Light.ttf); 
+    } h1 {
+        font-family: Ubuntu;
+    }
+        </style>
+
+<!---Info-->
+
     <title>Contact</title>
     <h1>Contact Me</h1>
     <h2>I would love to hear from you</h2>
 </head>
 <body>
     <img src="./Images/Lauren Hollamby Photography 12.jpg" height="400"  width="600" alt="Photograph of couple stood on a rock overlooking Moraine Lake in their wedding attire.">
-    <form>
+
+    <!---Contact form -->
+    <div class="container">
+
+    <form action="action_page.php">
         <br>
         <label for="name">Name:</label>
         <input type="text" id="name">
@@ -24,14 +49,32 @@
         <input type="date" id="date">
         <br>
         <label for="type">Type of event:</label>
-        <input type="text" id="type">
+        <select id="text" name="Event">
+            <option value="Elopement">Elopement</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Family">Family Session</option>
+            <option value="Proposal">Proposal</option>
+            <option value="Engagement">Engagement</option>
+
+    </select>
+    <br>
+    <br>
+
+    <label for="further info"> </label>
+    <textarea id="further info" name="further info" placeholder="Additional details"
+    style="height:200px"></textarea>
+
+    <input type="submit" value="Submit"
     </form>
-    <br>
-    <br>
+    
     <section>
+        <br>
+        <br>
+
         <a href="/index.html">Return to homepage </a>
     </section>
 </body>
+<br>
 <footer>
     <p>©2024 Lauren Hollamby</p> 
 </footer>
