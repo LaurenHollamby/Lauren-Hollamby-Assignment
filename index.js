@@ -1,3 +1,6 @@
+console.log("Hello")
+
+
 // dynamic year
 
 const fYear = document.getElementById("footerYear");
