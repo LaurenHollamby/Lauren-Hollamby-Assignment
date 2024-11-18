@@ -1,3 +1,15 @@
+// dynamic year
+
+const fYear = document.getElementById("footerYear");
+const d = new Date ();
+fYear.innerText = d.getFullYear();
+
+//fYear.textContext = d
+console.log(d);
+
+
+
+
 var time = new Date().getHours();
 if (time < 12) {
   greeting = "Good morning";
